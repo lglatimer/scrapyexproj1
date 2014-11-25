@@ -15,3 +15,18 @@ NEWSPIDER_MODULE = 'Demo_proj1.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'Demo_proj1 (+http://www.yourdomain.com)'
+
+
+# Broad crawl defaults from scrapy documentation
+#  http://doc.scrapy.org/en/latest/topics/broad-crawls.html
+CONCURRENT_REQUESTS = 100
+LOG_LEVEL = 'DEBUG'
+COOKIES_ENABLED = False
+RETRY_ENABLED = False
+DOWNLOAD_TIMEOUT = 15
+REDIRECT_ENABLED = False
+AJAXCRAWL_ENABLED = True
+
+# Additional broad crawl settings to conserve resources
+CONCURRENT_REQUESTS_PER_DOMAIN = 4
+DEPTH_LIMIT = 4
